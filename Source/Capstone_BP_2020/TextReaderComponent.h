@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "PlatformFilemanager.h"
+#include "Misc/Paths.h"
 #include "TextReaderComponent.generated.h"
 
 
