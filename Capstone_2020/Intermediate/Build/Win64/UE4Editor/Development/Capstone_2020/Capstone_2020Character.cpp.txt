@@ -1,0 +1,37 @@
+D:\Coding Projects\Capstone_BP_2020\Capstone_2020\Intermediate\Build\Win64\UE4Editor\Development\Capstone_2020\Definitions.Capstone_2020.h
+d:\coding projects\capstone_bp_2020\capstone_2020\source\capstone_2020\Capstone_2020Character.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+D:\Coding Projects\Capstone_BP_2020\Capstone_2020\Intermediate\Build\Win64\UE4Editor\Inc\Capstone_2020\Capstone_2020Character.generated.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\HeadMountedDisplay\Public\HeadMountedDisplayFunctionLibrary.h
+e:\epicgames\ue_4.24\engine\source\runtime\headmounteddisplay\public\HeadMountedDisplayTypes.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\HeadMountedDisplayTypes.generated.h
+e:\epicgames\ue_4.24\engine\source\runtime\headmounteddisplay\public\IIdentifiableXRDevice.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\IIdentifiableXRDevice.generated.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\HeadMountedDisplayFunctionLibrary.generated.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CapsuleComponent.generated.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementComponent.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavigationAvoidanceTypes.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationAvoidanceTypes.generated.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Public\AI/RVOAvoidanceInterface.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RVOAvoidanceInterface.generated.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/PawnMovementComponent.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/NavMovementComponent.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Classes\AI/Navigation/PathFollowingAgentInterface.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PathFollowingAgentInterface.generated.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavMovementComponent.generated.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PawnMovementComponent.generated.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Classes\Interfaces/NetworkPredictionInterface.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NetworkPredictionInterface.generated.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
+E:\EpicGames\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h

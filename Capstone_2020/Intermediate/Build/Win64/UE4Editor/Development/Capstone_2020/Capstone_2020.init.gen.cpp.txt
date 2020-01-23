@@ -1,0 +1,3 @@
+D:\Coding Projects\Capstone_BP_2020\Capstone_2020\Intermediate\Build\Win64\UE4Editor\Development\Capstone_2020\Definitions.Capstone_2020.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+E:\EpicGames\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
