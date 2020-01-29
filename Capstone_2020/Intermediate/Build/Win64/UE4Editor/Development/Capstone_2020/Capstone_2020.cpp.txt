@@ -1,2 +1,0 @@
-D:\Coding Projects\Capstone_BP_2020\Capstone_2020\Intermediate\Build\Win64\UE4Editor\Development\Capstone_2020\Definitions.Capstone_2020.h
-d:\coding projects\capstone_bp_2020\capstone_2020\source\capstone_2020\Capstone_2020.h
