@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "Engine.h"
 #include "GameFramework/Character.h"
 #include "Capstone_2020Character.generated.h"
 
@@ -18,6 +18,10 @@ class ACapstone_2020Character : public ACharacter
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
+
+	/** Collection sphere */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	class USphereComponent* CollectionSphere;
 public:
 	ACapstone_2020Character();
 
@@ -28,6 +32,8 @@ public:
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
+
+	virtual void Tick(float DeltaTime) override;
 
 protected:
 
@@ -57,6 +63,12 @@ protected:
 
 	/** Handler for when a touch input stops. */
 	void TouchStopped(ETouchIndex::Type FingerIndex, FVector Location);
+
+	/** Function to collect every AutoPickup in range. */
+	void CollectAutoPickups();
+
+	/** Function to check for the closest Interactable in sight and in range. */
+	void CheckForInteractables();
 
 protected:
 	// APawn interface
