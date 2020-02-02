@@ -13,16 +13,20 @@ class CAPSTONE_2020_API UHealthComponent : public UActorComponent
 	GENERATED_BODY()
 
 public:	
-	// Sets default values for this component's properties
-	UHealthComponent();
+	  // Sets default values for this component's properties
+	  UHealthComponent();
 
 protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
+	  // Called when the game starts
+	  virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
+    float DefaultHealth;
 
-		
+    UPROPERTY(BlueprintReadWrite)
+    float Health;
+
+    UFUNCTION()
+    void TakeDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType,
+        class AController* InstigatedBy, AActor* DamageCauser);
 };
