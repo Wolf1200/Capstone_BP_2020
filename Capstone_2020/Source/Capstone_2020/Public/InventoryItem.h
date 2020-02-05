@@ -31,6 +31,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		FText Description;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool Consumable;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool Equippable;
+
 	bool operator==(const FInventoryItem& OtherItem) const
 	{
 		if (ItemID == OtherItem.ItemID)

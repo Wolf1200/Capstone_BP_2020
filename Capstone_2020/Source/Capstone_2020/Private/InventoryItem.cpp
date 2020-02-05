@@ -6,4 +6,6 @@ FInventoryItem::FInventoryItem()
 	this->Weight = 1;
 	this->Value = 1;
 	this->Description = FText::FromString("No Description");
+	this->Consumable = false;
+	this->Equippable = false;
 }
