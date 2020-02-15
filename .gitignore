@@ -74,3 +74,7 @@
 
 # Cache files for the editor to use
 */DerivedDataCache/*
+
+# Ignore executables and zipped folders
+*.zip
+*/WindowsNoEditor
