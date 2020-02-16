@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include ".\Health\HealthComponent.h"
-#include "GameFramework\Actor.h"
+#include "../../Public/Health/HealthComponent.h"
+#include "Actor.h"
 
 // Sets default values for this component's properties
 UHealthComponent::UHealthComponent()
