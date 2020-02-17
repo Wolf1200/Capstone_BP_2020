@@ -29,4 +29,7 @@ protected:
     UFUNCTION()
     void TakeDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType,
         class AController* InstigatedBy, AActor* DamageCauser);
+
+    UFUNCTION(BlueprintCallable, Category = "Health")
+        void DrinkPotion(float healthIncrease);
 };

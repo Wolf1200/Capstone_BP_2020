@@ -36,3 +36,13 @@ void UHealthComponent::TakeDamage(AActor * DamagedActor, float Damage, const UDa
 
     Health = FMath::Clamp(Health - Damage, 0.0f, DefaultHealth);
 }
+
+void UHealthComponent::DrinkPotion(float healthIncrease)
+{
+    Health += healthIncrease;
+
+    // make sure health doesn't increase over the default level
+    if (Health > DefaultHealth) {
+        Health = DefaultHealth;
+    }
+}
