@@ -14,7 +14,8 @@ ABoneParent::ABoneParent()
   RootComponent = Root;
 
   Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
-  Mesh->AttachTo(Root);
+ // Mesh->AttachTo(Root); (deprecated)
+  Mesh->AttachToComponent(Root, FAttachmentTransformRules::SnapToTargetIncludingScale);
   Mesh->SetupAttachment(Root);
 
   this->BoxCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollider"));
