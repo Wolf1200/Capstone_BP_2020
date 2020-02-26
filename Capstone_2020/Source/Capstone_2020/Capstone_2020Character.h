@@ -40,6 +40,9 @@ public:
   UPROPERTY(BlueprintReadWrite)
   float Insight;
 
+  UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Character Movement: Walking")
+  float SprintSpeedMultiplier;
+
   virtual void Tick(float DeltaTime) override;
 
 protected:
@@ -76,6 +79,10 @@ protected:
 
 	/** Function to check for the closest Interactable in sight and in range. */
 	void CheckForInteractables();
+
+    void Sprint();
+
+    void StopSprinting();
 
 protected:
 	// APawn interface
