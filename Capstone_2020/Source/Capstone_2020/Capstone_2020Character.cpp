@@ -92,6 +92,9 @@ void ACapstone_2020Character::SetupPlayerInputComponent(class UInputComponent* P
     // Sprint functionality
     PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &ACapstone_2020Character::Sprint);
     PlayerInputComponent->BindAction("Sprint", IE_Released, this, &ACapstone_2020Character::StopSprinting);
+
+    // Dash functionality
+    PlayerInputComponent->BindAction("Dash", IE_Pressed, this, &ACapstone_2020Character::Dash);
 }
 
 
@@ -219,4 +222,12 @@ void ACapstone_2020Character::Sprint() {
 
 void ACapstone_2020Character::StopSprinting() {
     GetCharacterMovement()->MaxWalkSpeed /= SprintSpeedMultiplier;
+}
+
+void ACapstone_2020Character::Dash() {
+    if (!GetCharacterMovement()->IsFalling()) {
+        GetCharacterMovement()->Velocity.Z = 1000;
+        GetCharacterMovement()->Velocity.X *= 10;
+        GetCharacterMovement()->Velocity.Y *= 10;
+    }
 }

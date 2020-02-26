@@ -84,6 +84,8 @@ protected:
 
     void StopSprinting();
 
+    void Dash();
+
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
