@@ -33,7 +33,7 @@ ACapstone_2020Character::ACapstone_2020Character()
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Character moves in the direction of input...	
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f); // ...at this rotation rate
-	GetCharacterMovement()->JumpZVelocity = 600.f;
+	GetCharacterMovement()->JumpZVelocity = 400.f;
 	GetCharacterMovement()->AirControl = 0.2f;
 
 	// Create a camera boom (pulls in towards the player if there is a collision)
@@ -57,6 +57,8 @@ ACapstone_2020Character::ACapstone_2020Character()
   CollectionSphere = CreateDefaultSubobject<USphereComponent>(TEXT("CollectionSphere"));
   CollectionSphere->SetupAttachment(RootComponent);
   CollectionSphere->SetSphereRadius(200.f);
+
+  SprintSpeedMultiplier = 1.8f;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -86,6 +88,10 @@ void ACapstone_2020Character::SetupPlayerInputComponent(class UInputComponent* P
 
 	// VR headset functionality
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ACapstone_2020Character::OnResetVR);
+
+    // Sprint functionality
+    PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &ACapstone_2020Character::Sprint);
+    PlayerInputComponent->BindAction("Sprint", IE_Released, this, &ACapstone_2020Character::StopSprinting);
 }
 
 
@@ -205,4 +211,12 @@ void ACapstone_2020Character::CheckForInteractables()
 
 		IController->CurrentInteractable = nullptr;
 	}
+}
+
+void ACapstone_2020Character::Sprint() {
+    GetCharacterMovement()->MaxWalkSpeed *= SprintSpeedMultiplier;
+}
+
+void ACapstone_2020Character::StopSprinting() {
+    GetCharacterMovement()->MaxWalkSpeed /= SprintSpeedMultiplier;
 }
