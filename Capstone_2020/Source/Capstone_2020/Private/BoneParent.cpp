@@ -14,15 +14,12 @@ ABoneParent::ABoneParent()
   RootComponent = Root;
 
   Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
- // Mesh->AttachTo(Root); (deprecated)
- // Mesh->AttachToComponent(Root, FAttachmentTransformRules::SnapToTargetIncludingScale); (Use SetupAttachement)
   Mesh->SetupAttachment(Root);
 
   this->BoxCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollider"));
   this->BoxCollider->SetGenerateOverlapEvents(true);
   this->BoxCollider->SetWorldScale3D(FVector(1.0f, 1.0f, 1.0f));
   this->BoxCollider->SetupAttachment(this->RootComponent);
-  // this->BoxCollider->AttachToComponent(this->RootComponent, FAttachmentTransformRules::SnapToTargetIncludingScale);
 }
 
 // Called when the game starts or when spawned
