@@ -38,5 +38,6 @@ public:
       UStaticMeshComponent* Mesh;
 
   // if insight has been collected
-  bool beenCollected;
+  UPROPERTY(BlueprintReadOnly)
+      bool beenCollected;
 };
