@@ -6,7 +6,7 @@
 #include "Interactable.h"
 #include "Spirit.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FInsightDelegate);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FInsightDelegate, ASpirit*, caller);
 
 UCLASS()
 class CAPSTONE_2020_API ASpirit : public AInteractable

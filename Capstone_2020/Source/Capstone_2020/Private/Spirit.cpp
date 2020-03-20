@@ -40,12 +40,9 @@ void ASpirit::Interact_Implementation(APlayerController * Controller)
 {
     Super::Interact_Implementation(Controller);
 
-    // trigger update insight event if the insight has not already been collected
-    if (!this->beenCollected) {
-        this->beenCollected = true;
-
-        TriggerUpdateInsight.Broadcast();
-    }
+    // trigger update insight event
+    this->beenCollected = true;
+    TriggerUpdateInsight.Broadcast(this);
 }
 
 /*FString ASpirit::GetInteractText()
