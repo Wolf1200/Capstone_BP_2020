@@ -31,6 +31,6 @@ public:
       UStaticMeshComponent* Mesh;
 
   // insight required to vanish the door
-  UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+  UPROPERTY(BlueprintReadOnly, EditAnywhere)
       float insightLvl;
 };
