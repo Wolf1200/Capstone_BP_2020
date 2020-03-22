@@ -27,7 +27,7 @@ public:
       USceneComponent* Root;
 
   // door mesh
-  UPROPERTY(EditAnywhere)
+  UPROPERTY(BlueprintReadWrite, EditAnywhere)
       UStaticMeshComponent* Mesh;
 
   // insight required to vanish the door
