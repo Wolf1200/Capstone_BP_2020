@@ -37,7 +37,7 @@ public:
   UPROPERTY(EditAnywhere)
       UStaticMeshComponent* Mesh;
 
-  // if insight has been collected
-  UPROPERTY(BlueprintReadOnly)
-      bool beenCollected;
+  // spirit id
+  UPROPERTY(BlueprintReadWrite)
+      int spiritID;
 };

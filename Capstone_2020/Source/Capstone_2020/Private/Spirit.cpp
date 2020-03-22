@@ -14,9 +14,6 @@ ASpirit::ASpirit()
   this->Mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
   this->RootComponent = Cast<USceneComponent>(this->Mesh);
 
-  // insight starts out not collected
-  this->beenCollected = false;
-
   // set interactable variables
   Super::Name = "Spirit";
   Super::Action = "collect insight";
@@ -41,7 +38,6 @@ void ASpirit::Interact_Implementation(APlayerController * Controller)
     Super::Interact_Implementation(Controller);
 
     // trigger update insight event
-    this->beenCollected = true;
     TriggerUpdateInsight.Broadcast(this);
 }
 

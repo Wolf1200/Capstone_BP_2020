@@ -33,4 +33,8 @@ public:
   // insight required to vanish the door
   UPROPERTY(BlueprintReadOnly, EditAnywhere)
       float insightLvl;
+
+  // door id
+  UPROPERTY(BlueprintReadWrite)
+      int doorID;
 };
