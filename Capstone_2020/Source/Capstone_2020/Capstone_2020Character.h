@@ -45,6 +45,9 @@ public:
 
   virtual void Tick(float DeltaTime) override;
 
+  UPROPERTY(EditAnywhere, Category="Default")
+      int DashMultiplier;
+
 protected:
 
 	/** Resets HMD orientation in VR. */

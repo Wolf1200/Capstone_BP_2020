@@ -59,6 +59,9 @@ ACapstone_2020Character::ACapstone_2020Character()
   CollectionSphere->SetSphereRadius(200.f);
 
   SprintSpeedMultiplier = 1.8f;
+
+  // set dash multiplier
+  this->DashMultiplier = 30;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -227,7 +230,7 @@ void ACapstone_2020Character::StopSprinting() {
 void ACapstone_2020Character::Dash() {
     if (!GetCharacterMovement()->IsFalling()) {
         GetCharacterMovement()->Velocity.Z = 1000;
-        GetCharacterMovement()->Velocity.X *= 45;
-        GetCharacterMovement()->Velocity.Y *= 45;
+        GetCharacterMovement()->Velocity.X *= this->DashMultiplier;
+        GetCharacterMovement()->Velocity.Y *= this->DashMultiplier;
     }
 }
