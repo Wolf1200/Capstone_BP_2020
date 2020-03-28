@@ -10,8 +10,8 @@ UHealthComponent::UHealthComponent()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = false;
 
-  DefaultHealth = 100;
-  Health = DefaultHealth;
+  this->DefaultHealth = 100;
+  this->Health = DefaultHealth;
 }
 
 
