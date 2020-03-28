@@ -55,6 +55,9 @@ public:
   UPROPERTY(BlueprintReadWrite)
       ACharacter* TargetEnemy;
 
+  UPROPERTY(BlueprintReadWrite)
+      FDateTime LastDash;
+
 protected:
 
 	/** Resets HMD orientation in VR. */

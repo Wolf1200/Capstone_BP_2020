@@ -62,9 +62,11 @@ ACapstone_2020Character::ACapstone_2020Character()
 
   // set dash multiplier
   this->DashMultiplier = 30;
+  this->LastDash = LastDash.Now();
 
   // set targeting
   this->isTargeting = false;
+
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -231,7 +233,8 @@ void ACapstone_2020Character::StopSprinting() {
 }
 
 void ACapstone_2020Character::Dash() {
-    if (!GetCharacterMovement()->IsFalling()) {
+    if (GetCharacterMovement()->Velocity.X != 0 && GetCharacterMovement()->Velocity.Y != 0 && !GetCharacterMovement()->IsFalling() && (LastDash.Now() - LastDash).GetSeconds() > .4) {
+        LastDash = LastDash.Now();
         GetCharacterMovement()->Velocity.Z = 1000;
         GetCharacterMovement()->Velocity.X *= this->DashMultiplier;
         GetCharacterMovement()->Velocity.Y *= this->DashMultiplier;
