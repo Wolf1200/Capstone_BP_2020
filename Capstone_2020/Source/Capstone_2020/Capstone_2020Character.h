@@ -48,6 +48,13 @@ public:
   UPROPERTY(EditAnywhere, Category="Default")
       int DashMultiplier;
 
+  // for targeting enemies and strafing
+  UPROPERTY(BlueprintReadWrite)
+      bool isTargeting;
+
+  UPROPERTY(BlueprintReadWrite)
+      ACharacter* TargetEnemy;
+
 protected:
 
 	/** Resets HMD orientation in VR. */

@@ -62,6 +62,9 @@ ACapstone_2020Character::ACapstone_2020Character()
 
   // set dash multiplier
   this->DashMultiplier = 30;
+
+  // set targeting
+  this->isTargeting = false;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -130,31 +133,31 @@ void ACapstone_2020Character::LookUpAtRate(float Rate)
 
 void ACapstone_2020Character::MoveForward(float Value)
 {
-	if ((Controller != NULL) && (Value != 0.0f))
-	{
-		// find out which way is forward
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
+    if ((Controller != NULL) && (Value != 0.0f)) {
 
-		// get forward vector
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-		AddMovementInput(Direction, Value);
-	}
+        // find out which way is forward
+        const FRotator Rotation = Controller->GetControlRotation();
+        const FRotator YawRotation(0, Rotation.Yaw, 0);
+
+        // get forward vector
+        const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+        AddMovementInput(Direction, Value);        
+    }
 }
 
 void ACapstone_2020Character::MoveRight(float Value)
 {
-	if ( (Controller != NULL) && (Value != 0.0f) )
-	{
-		// find out which way is right
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
-	
-		// get right vector 
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
-		// add movement in that direction
-		AddMovementInput(Direction, Value);
-	}
+    if ((Controller != NULL) && (Value != 0.0f))
+    {
+        // find out which way is right
+        const FRotator Rotation = Controller->GetControlRotation();
+        const FRotator YawRotation(0, Rotation.Yaw, 0);
+
+        // get right vector 
+        const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+        // add movement in that direction
+        AddMovementInput(Direction, Value);    
+    }
 }
 
 void ACapstone_2020Character::Tick(float Deltatime)
