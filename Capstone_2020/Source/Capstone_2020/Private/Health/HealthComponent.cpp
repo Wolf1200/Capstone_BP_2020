@@ -19,6 +19,7 @@ UHealthComponent::UHealthComponent()
 void UHealthComponent::BeginPlay()
 {
 	Super::BeginPlay();
+    this->Health = DefaultHealth;
 
   AActor* Owner = GetOwner();
 
