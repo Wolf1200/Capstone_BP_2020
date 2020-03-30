@@ -67,6 +67,8 @@ ACapstone_2020Character::ACapstone_2020Character()
   // set targeting
   this->isTargeting = false;
 
+  // set height (based on mesh lol)
+  this->PlayerHeight = 165.0f;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -196,9 +198,12 @@ void ACapstone_2020Character::CheckForInteractables()
 	// Create a LineTrace to check for a hit
 	FHitResult HitResult;
 
-	int32 Range = 500;
-	FVector StartTrace = FollowCamera->GetComponentLocation();
-	FVector EndTrace = (FollowCamera->GetForwardVector() * Range) + StartTrace;
+	int32 Range = 400;
+  FVector StartTrace = FVector(0.0f, 0.0f, this->PlayerHeight) + this->GetActorLocation();
+  FVector EndTrace = (FollowCamera->GetForwardVector() * Range) + StartTrace;
+
+  // shape of sight (sphere)
+  FCollisionShape TraceShape = FCollisionShape::MakeSphere(48.0f);
 
 	FCollisionQueryParams QueryParams;
 	QueryParams.AddIgnoredActor(this);
@@ -208,7 +213,7 @@ void ACapstone_2020Character::CheckForInteractables()
 	if (IController)
 	{
 		// Check if something is hit
-		if (GetWorld()->LineTraceSingleByChannel(HitResult, StartTrace, EndTrace, ECC_Visibility, QueryParams))
+		if (GetWorld()->SweepSingleByChannel(HitResult, StartTrace, EndTrace, FRotator(0.0f, 0.0f, 0.0f).Quaternion(), ECC_Visibility, TraceShape, QueryParams))
 		{
 			// Cast the actor to AInteractable
 			AInteractable* Interactable = Cast<AInteractable>(HitResult.GetActor());

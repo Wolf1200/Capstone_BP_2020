@@ -58,6 +58,9 @@ public:
   UPROPERTY(BlueprintReadWrite)
       FDateTime LastDash;
 
+  UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Default")
+      float PlayerHeight;
+
 protected:
 
 	/** Resets HMD orientation in VR. */
