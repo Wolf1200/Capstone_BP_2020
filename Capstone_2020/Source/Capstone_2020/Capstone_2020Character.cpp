@@ -199,8 +199,8 @@ void ACapstone_2020Character::CheckForInteractables()
 	FHitResult HitResult;
 
 	int32 Range = 400;
-  FVector StartTrace = FVector(0.0f, 0.0f, this->PlayerHeight) + this->GetActorLocation();
-  FVector EndTrace = (FollowCamera->GetForwardVector() * Range) + StartTrace;
+  FVector StartTrace = this->GetActorLocation();
+  FVector EndTrace =  Range * StartTrace;
 
   // shape of sight (sphere)
   FCollisionShape TraceShape = FCollisionShape::MakeSphere(48.0f);
