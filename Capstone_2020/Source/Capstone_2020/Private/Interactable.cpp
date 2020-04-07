@@ -2,6 +2,8 @@
 
 
 #include "Interactable.h"
+#include "Capstone_2020Controller.h"
+#include "GameFramework/Controller.h"
 
 AInteractable::AInteractable()
 {
@@ -18,4 +20,3 @@ FString AInteractable::GetInteractText() const
 {
 	return FString::Printf(TEXT("%s: Press F to %s"), *Name, *Action);
 }
-

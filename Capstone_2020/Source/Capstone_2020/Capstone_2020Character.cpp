@@ -54,9 +54,9 @@ ACapstone_2020Character::ACapstone_2020Character()
   Insight = DefaultInsight;
 
   // Create the collection sphere
-  CollectionSphere = CreateDefaultSubobject<USphereComponent>(TEXT("CollectionSphere"));
+  /*CollectionSphere = CreateDefaultSubobject<USphereComponent>(TEXT("CollectionSphere"));
   CollectionSphere->SetupAttachment(RootComponent);
-  CollectionSphere->SetSphereRadius(200.f);
+  CollectionSphere->SetSphereRadius(200.f);*/
 
   SprintSpeedMultiplier = 1.8f;
 
@@ -168,14 +168,14 @@ void ACapstone_2020Character::Tick(float Deltatime)
 {
 	Super::Tick(Deltatime);
 
-	CollectAutoPickups();
-	CheckForInteractables();
+	//CollectAutoPickups();
+	//CheckForInteractables();
 }
 
 void ACapstone_2020Character::CollectAutoPickups()
 {
 	// Get all overlapping Actors and store them in an array
-	TArray<AActor*> CollectedActors;
+	/*TArray<AActor*> CollectedActors;
 	CollectionSphere->GetOverlappingActors(CollectedActors);
 
 	ACapstone_2020Controller* IController = Cast<ACapstone_2020Controller>(GetController());
@@ -190,7 +190,7 @@ void ACapstone_2020Character::CollectAutoPickups()
 		{
 			TestPickup->Collect(IController);
 		}
-	}
+	}*/
 }
 
 void ACapstone_2020Character::CheckForInteractables()

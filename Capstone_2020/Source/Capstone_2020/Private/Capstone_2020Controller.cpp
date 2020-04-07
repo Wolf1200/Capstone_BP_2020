@@ -48,6 +48,11 @@ void ACapstone_2020Controller::SetupInputComponent()
 	InputComponent->BindAction("Interact", IE_Pressed, this, &ACapstone_2020Controller::Interact);
 }
 
+void ACapstone_2020Controller::ResetInteractable()
+{
+    this->CurrentInteractable = nullptr;
+}
+
 void ACapstone_2020Controller::Interact()
 {
 	if (CurrentInteractable)

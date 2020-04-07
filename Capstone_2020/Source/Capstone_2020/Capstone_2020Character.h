@@ -20,8 +20,8 @@ class ACapstone_2020Character : public ACharacter
 	class UCameraComponent* FollowCamera;
 
 	/** Collection sphere */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-		class USphereComponent* CollectionSphere;
+	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	//	class USphereComponent* CollectionSphere;
 
 public:
 	ACapstone_2020Character();

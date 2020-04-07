@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/SphereComponent.h"
 #include "Interactable.generated.h"
 
 UCLASS()
@@ -14,6 +15,7 @@ public:
 
 	UFUNCTION(BlueprintNativeEvent)
 		void Interact(APlayerController* Controller);
+
 	virtual void Interact_Implementation(APlayerController* Controller);
 
 	UPROPERTY(EditDefaultsOnly)

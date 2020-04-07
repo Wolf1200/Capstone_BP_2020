@@ -43,6 +43,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int32 InventoryWeightLimit;
 
+  UFUNCTION(BlueprintCallable, Category = "Utils")
+      void ResetInteractable();
+
 protected:
 	void Interact();
 
