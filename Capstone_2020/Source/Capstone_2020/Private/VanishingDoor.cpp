@@ -16,6 +16,8 @@ AVanishingDoor::AVanishingDoor()
 
   this->Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
   this->Mesh->SetupAttachment(Root);
+
+  this->wasOpened = false;
 }
 
 // Called when the game starts or when spawned

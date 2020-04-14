@@ -37,4 +37,7 @@ public:
   // door id
   UPROPERTY(BlueprintReadWrite)
       int doorID;
+
+  UPROPERTY(BlueprintReadWrite, EditAnywhere)
+      bool wasOpened;
 };
