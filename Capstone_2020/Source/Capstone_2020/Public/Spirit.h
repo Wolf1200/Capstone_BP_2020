@@ -38,6 +38,6 @@ public:
       UStaticMeshComponent* Mesh;
 
   // spirit id
-  UPROPERTY(BlueprintReadWrite)
+  UPROPERTY(BlueprintReadWrite, EditAnywhere)
       int spiritID;
 };

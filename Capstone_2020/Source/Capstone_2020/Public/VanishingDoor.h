@@ -35,7 +35,7 @@ public:
       float insightLvl;
 
   // door id
-  UPROPERTY(BlueprintReadWrite)
+  UPROPERTY(BlueprintReadWrite, EditAnywhere)
       int doorID;
 
   UPROPERTY(BlueprintReadWrite, EditAnywhere)
