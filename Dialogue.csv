@@ -1,0 +1,50 @@
+,Spirit_ID,Convo_ID,Line_ID,Dialogue
+1,1,1,1,Oh! You got the sword! Impressive. But do you know how to fight?
+2,1,1,2,Use L_CLICK to swing your sword to fight the goon in the next room.
+3,1,1,3,You can also look at it and press SHIFT to target it.
+4,1,1,4,Some enemies drop loot! Use TAB to get to your inventory. Good luck!
+5,1,2,1,Still alive?
+6,2,1,1,"When you talk to us spirits"","" we can give you some of our knowledge of the labyrinth."
+7,2,1,2,"We call it INSIGHT. It's not much"","" but it will hopefully open some doors for you."
+8,2,1,3,"Follow this hallway straight ahead"","" and there's another spirit that can tell you about the RATS."
+9,2,2,1,Hope you are well.
+10,3,1,1,Beware the rats! Use your fancy R_CLICK attack to knock them back!
+11,3,1,2,And good luck finding your way out of here. Look for the fancy doors.
+12,3,2,1,Found any fancy doors?
+13,4,1,1,"If you ever find the way out"","" please take me with you."
+14,5,1,1,Have you noticed that the wizards have tails?
+15,6,1,1,Sometimes doors are not doors and I'm not about that.
+16,7,1,1,Feels like someone is watching me…
+17,8,1,1,"We were once adventurers like you"","" but we didn't make it to the sword."
+18,8,1,2,I wish there was some way we could leave…
+19,9,1,1,I never figured out why there's all these eyes everywhere…
+20,9,1,2,I think the wall just winked at me.
+21,10,1,1,The labyrinth-maker is always watching.
+22,10,1,2,I wonder if he is on his way…
+23,11,1,1,"The legends say that this place was built to keep the sword safe"","" and that it powers everything here."
+24,12,1,1,"I heard that id the sword is taken out of the labyrinth"","" the whole place will fall apart."
+25,13,1,1,Doors that are not doors can sense insight… scary.
+26,14,1,1,I tried to pet the rats.
+27,15,1,1,"I like it here"","" don't you? So peaceful."
+28,15,1,1,"Please"","" join us for a while! We are having pie later."
+29,16,1,1,Don't listen to my brother. He lost it a few centuries back.
+30,17,1,1,"HARK"","" ADVENTURER"","" FOR I TELL YOU A GREAT SECRET!"
+31,17,1,2,SOMEWHERE IN THESE DARK HALLS LIVES THE EVER-ELUSIVE LOOT SNAIL!
+32,17,1,3,CATCH IT AND BE BLESSED WITH GREAT RICHES!
+33,18,1,1,"I wonder… if you gave me the sword"","" would I come back to life?"
+34,18,1,2,You want to find out? I'm sure it'd be fine.
+35,18,1,3,"I'll give it right back"","" I swear!"
+36,19,1,1,The walls whisper secrets to me.
+37,19,1,2,"They say the labyrinth-maker wanted to live forever"","" and built the labyrinth to guard the sword."
+38,19,1,3,The sword keeps him alive… as long as it stays in these walls…
+39,20,1,1,"Have you seen my friend? We came in here to play hide-and-go-seek"","" and I can't finder her!"
+40,20,1,2,Feels like I've been seeking for ages!
+41,21,1,1,"Whatever anyone says, I totally did NOT steal the king's cat!"
+42,21,1,2,It wasn't me; I swear! Please believe me!
+43,22,1,1,Sup? The two of us are outlaws from around here.
+44,22,1,2,Came in here to hide and never made it out.
+45,22,1,3,"This guy stole a cat"","" and I committed high treason."
+46,23,1,1,Hi! I was playing hide-and-go-seak with my friend and ran into these two!
+47,23,1,2,We are best friends now. You wanna be friends too?
+48,23,1,3,I hope my friend can join us soon!
+49,24,1,1,"Behold"","" royal cat. Do pet. Very nice."
